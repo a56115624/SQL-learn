@@ -1,5 +1,5 @@
 # SQL-learn
-自我學習筆記
+* 自我學習筆記
 =
 create database `我要創建的資料庫名稱`;
 創建資料庫
@@ -13,3 +13,14 @@ drop database `我要刪除的資料庫名稱`;
 
 use`我要使用的資料庫`;選擇我要用的資料庫
 -
+
+
+* 常用到的表格
+=
+
+INT              -- 整數
+DECIMAL(m,n)     -- 有小數點的整數 
+VARCHAR(n)	     -- 字串
+BLOB			 -- (Binary Large Object) 圖片 影片 檔案
+DATE			 -- `YYYY-MM-DD` 日期
+TIMESTAMP		 -- `YYYY--MM-DD HH:MM:SS` 紀錄時間
