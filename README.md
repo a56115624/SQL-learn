@@ -4,16 +4,22 @@
 
 
 創建資料庫 
+--
 * create database `我要創建的資料庫名稱`;<br>  
 顯示資料庫 
+--
 * SHOW databases;查找現有的所有資料庫;<br>  
 刪除資料庫 
+--
 * drop database `我要刪除的資料庫名稱`;<br>  
 選擇資料庫
+--
 * use`我要使用的資料庫`;選擇我要用的資料庫;<br>  
 選擇表格 
+--
 *describe `我的表格`; 查看我要的表格;<br>  
 刪除表格 
+--
 *drop table `student`; 刪除表格;<br>  
 
 
