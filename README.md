@@ -13,8 +13,8 @@
 常用到的表格
 =
 * INT              -- 整數
-* DECIMAL(m,n)     -- 有小數點的整數 
-* VARCHAR(n)	     -- 字串
+* DECIMAL(m,n)     -- 有小數點的整數   m 總更有幾位數  n 小數點佔幾位
+* VARCHAR(n)	     -- 字串   n代表最多存放幾個字元
 * BLOB			 -- (Binary Large Object) 圖片 影片 檔案
 * DATE			 -- `YYYY-MM-DD` 日期
 * TIMESTAMP		 -- `YYYY--MM-DD HH:MM:SS` 紀錄時間
