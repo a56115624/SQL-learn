@@ -5,28 +5,26 @@
 創建資料庫 
 --
 * create database `我要創建的資料庫名稱`;<br>  
-* 
+
 顯示資料庫 
 --
 * SHOW databases;<br>  
-* 
+
 刪除資料庫 
 --
 * drop database `我要刪除的資料庫名稱`;<br>  
-* 
+
 選擇資料庫
 --
 * use`我要使用的資料庫`;<br> 
-*  
+
 選擇表格 
 --
 * describe `我的表格`; <br>  
-*
 
 刪除表格
 --
 * drop table`我的表格`;<br>  
-*
 
 在表格中插入新的列
 --
@@ -35,7 +33,6 @@
 刪除表格中的某一列
 --
 * alter table `選擇的表格` drop column `列`;<br>
-* 
 
 常用到的表格
 =
