@@ -31,6 +31,10 @@
 在表格中插入新的列
 --
 * ALTER table `我要的表格` add 我要插入列的名子 decimal(3,2)<br>
+
+刪除表格中的某一列
+--
+* alter table `選擇的表格` drop column 列;<br>
 * 
 
 常用到的表格
