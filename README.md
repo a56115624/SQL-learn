@@ -21,7 +21,7 @@
 選擇表格 
 --
 *describe `我的表格`; 查看我要的表格;<br>  
-
+*
 刪除表格 
 --
 *drop table `student`; 刪除表格;<br>  
@@ -30,7 +30,6 @@
 --
 * ALTER table `我要的表格` add 我要插入列的名子 decimal(3,2)
 * 
-
 
 常用到的表格
 =
