@@ -8,7 +8,7 @@
 * 
 顯示資料庫 
 --
-* SHOW databases;查找現有的所有資料庫;<br>  
+* SHOW databases;<br>  
 * 
 刪除資料庫 
 --
@@ -16,25 +16,25 @@
 * 
 選擇資料庫
 --
-* use`我要使用的資料庫`;選擇我要用的資料庫;<br> 
+* use`我要使用的資料庫`;<br> 
 *  
 選擇表格 
 --
-* describe `我的表格`; 查看我要的表格;<br>  
+* describe `我的表格`; <br>  
 *
 
 刪除表格
 --
-* drop table`student`;刪除表格;<br>  
+* drop table`我的表格`;<br>  
 *
 
 在表格中插入新的列
 --
-* ALTER table `我要的表格` add 我要插入列的名子 decimal(3,2)<br>
+* ALTER table `我要的表格` add `列` decimal(3,2)<br>
 
 刪除表格中的某一列
 --
-* alter table `選擇的表格` drop column 列;<br>
+* alter table `選擇的表格` drop column `列`;<br>
 * 
 
 常用到的表格
