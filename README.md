@@ -11,7 +11,7 @@
 --
 * create database `我要創建的資料庫名稱`;<br>  
 
-顯示資料庫 
+顯示所有的資料庫 
 --
 * SHOW databases;<br>  
 
