@@ -27,6 +27,7 @@
 *drop table `student`; 刪除表格;<br>  
 *
 在表格中插入新的列
+--
 * ALTER table `我要的表格` add 我要插入列的名子 decimal(3,2)
 * 
 
