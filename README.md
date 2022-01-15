@@ -51,3 +51,5 @@
  		`name` varchar(20),
     		`major` varchar(20)
 		);
+		
+		primary key (`studeny_id`), == `student_id` int primary key,
