@@ -94,4 +94,7 @@
 
 		delete from `student`
 		where `name` = '狗狗' and  `score` = '20';
-
+取的資料
+=
+		select * from `student` order by `score`;            order by 從低到高排序
+		select * from `student` order by `score` desc ;      desc 由低到高排序    asc 由低到高排序
