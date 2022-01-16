@@ -92,3 +92,6 @@
 		where `student_id` = 4;
 
 
+		delete from `student`
+		where `name` = '狗狗' and  `score` = '20';
+
