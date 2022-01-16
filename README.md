@@ -81,5 +81,14 @@
 		update `student`           //你要改的表格
 		set `major` = '英語文學'   //你要改的列 = 你要換成的資料
  		where `major` = '英文';    //你要改的列 = 你原本的資料
+		
+		
+		update `student`
+		set `name` = '汪汪', `major` = '吃屎'
+		where `student_id` = 1;
+刪除
+=
+		delete FROM `student`
+		where `student_id` = 4;
 
 
