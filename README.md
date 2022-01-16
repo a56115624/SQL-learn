@@ -75,3 +75,11 @@
 		);
 		
 		primary key (`studeny_id`), == `student_id` int primary key,
+		
+新增修改
+=
+<!-- 		update `student`          --> 你要改的表格
+<!-- 		set `major` = '英語文學'   -->你要改的列 = 你要換成的資料
+<!-- 		where `major` = '英文';    -->你要改的列 = 你原本的資料
+
+
