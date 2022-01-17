@@ -172,5 +172,5 @@
 		select * from `employee`order by` salary` desc limit 3;
 		-- 6.取得所有員工的名子
 		select `name` from `employee`;
-		-- 7. 取得所有的branch_id取不重複
+		-- 7. 取得所有的branch_id且不重複
 		select  distinct `branch_id` from `employee`;
