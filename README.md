@@ -213,4 +213,31 @@ aggregate function 聚合函數
 
 		-- 3.取得生日在12月的員工
 		select * from `employee` where `brith_date` like '_____12%';
+		
+-- union 聯集
+==
+
+		-- 1. 員工的名子 union 客戶的名子
+		-- union 使用得時候 屬性數目要一樣 並且資料型態也要一樣
+		select `name`
+		from `employee`
+		union
+		select `client_name`
+		from `client`
+		union 
+		select `branch_name`
+		from `branch`;
+
+		-- 2. 員工的id + 員工的名子 union 客戶 id+ 客戶名子
+
+		select `emp_id`, `name`
+		from `employee` union select `client_id`,`client_name`
+		from `client`;
+
+		-- 3. 員工的薪水 union 銷售金額
+		select `salary` 
+		from `employee` 
+		union 
+		select `total_sales`
+		from `works_with`; 
 
