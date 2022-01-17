@@ -97,7 +97,7 @@
 取的資料
 =
 		select * from `student` order by `score`;            order by 從低到高排序
-		select * from `student` order by `score` desc ;      desc 由低到高排序    asc 由低到高排序   <> 不等於
+		select * from `student` order by `score` desc ;      desc 由低到高排序    asc 由低到高排序   <> 不等於  distinct 不重複
 		WHERE `MAJOR` IN('化工','吃屎','讀書');  =  WHERE `MAJOR` = '化工' OR `MAJOR` = '吃屎' OR `MAJOR` = '讀書';
 		
 創建資料庫
@@ -174,3 +174,6 @@
 		select `name` from `employee`;
 		-- 7. 取得所有的branch_id且不重複
 		select  distinct `branch_id` from `employee`;
+		
+aggregate function 聚合函數
+==
