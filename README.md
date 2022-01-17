@@ -151,3 +151,10 @@
 		insert into `employee` values(207,'小綠','2000-12-19','m',3600,3,208);
 		insert into `employee` values(209,'小白','1997-01-22','f',3900,3,207);
 		insert into `employee` values(210,'小藍','1925-11-10','f',8400,1,207);
+		
+		
+		insert into `client` values(400,'阿貓','2488648654');
+		insert into `client` values(401,'阿狗','1561655416');
+		insert into `client` values(402,'旺來','1565165');
+		insert into `client` values(403,'露西','156165135');
+		insert into `client` values(404,'艾瑞克','4894894153');
