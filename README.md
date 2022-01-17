@@ -54,6 +54,8 @@
 *  unique          該列的值視為一個不能重複
 *  default ‵值`     設定一個預設值,如果是空白的時候會自動補上
 *  auto_increment  自動增加列
+*  on delete set null  對應不到的話,直接在空格處填入null    提醒 primary key 的值 不可以為null
+*  on delete cascade 對應不到的話直接整筆刪掉
 
 
 常用到的表格
