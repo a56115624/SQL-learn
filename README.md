@@ -144,3 +144,10 @@
 		    foreign key(`emp_id`)references `employee`(`emp_id`) on delete cascade,
 		    foreign key(`client_id`)references `client`(`client_id`) on update cascade
 		);
+新增公司資料
+=
+		insert into `employee` values(206,'998-10-08','f',5000,1,null);
+		insert into `employee` values(207,'小綠','1985-09-96','m',2900,2,206);
+		insert into `employee` values(207,'小綠','2000-12-19','m',3600,3,208);
+		insert into `employee` values(209,'小白','1997-01-22','f',3900,3,207);
+		insert into `employee` values(210,'小藍','1925-11-10','f',8400,1,207);
