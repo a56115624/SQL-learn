@@ -260,4 +260,27 @@ aggregate function 聚合函數
 		 select `emp_id`,`name`,`branch_name`
 		from `employee` right join `branch` 
 		on `emp_id` = `manager_id`;
+		
+		
+-- subquery 子查詢
+==
+
+		-- 1. 找出研發部門的經理名子
+
+		select `name`
+		from `employee`
+		where `emp_id` = (
+			select `manager_id` 
+			from `branch`
+			where `branch_name` = '研發'
+		);
+		-- 2. 找出對單一位客戶銷售金額超過5000的員工名子
+
+		select `name`
+		from `employee`
+		where `emp_id` in(
+			select `emp_id` 
+			from `works_with`
+			where `total_sales` >5000 
+		);
 
