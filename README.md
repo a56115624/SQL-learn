@@ -158,3 +158,19 @@
 		insert into `client` values(402,'旺來','1565165');
 		insert into `client` values(403,'露西','156165135');
 		insert into `client` values(404,'艾瑞克','4894894153');
+練習
+=
+		-- 1.取得所有員工資料
+		select * from `employee`;
+		-- 2.取得所有客戶資料
+		select * from `client`;
+		-- 3.按照薪水低到高取得員工資料
+		select * from `employee`order by `salary`;
+		-- 4.按照薪水高到低取得員工資料
+		select * from `employee`order by `salary`desc;
+		-- 5.取得薪水前3高薪水的員工
+		select * from `employee`order by` salary` desc limit 3;
+		-- 6.取得所有員工的名子
+		select `name` from `employee`;
+		-- 7. 取得所有的branch_id取不重複
+		select  distinct `branch_id` from `employee`;
