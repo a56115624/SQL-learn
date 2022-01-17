@@ -97,4 +97,50 @@
 取的資料
 =
 		select * from `student` order by `score`;            order by 從低到高排序
-		select * from `student` order by `score` desc ;      desc 由低到高排序    asc 由低到高排序
+		select * from `student` order by `score` desc ;      desc 由低到高排序    asc 由低到高排序   <> 不等於
+		WHERE `MAJOR` IN('化工','吃屎','讀書');  =  WHERE `MAJOR` = '化工' OR `MAJOR` = '吃屎' OR `MAJOR` = '讀書';
+		
+創建資料庫
+=
+		create table `employee`(
+		`emp_id` int primary key,
+    		`name` varchar(20),
+		    `brith_date` Date,
+		    `sex` varchar(1),
+		    `salary` int,
+		    `branch_id` int,
+		    `sup_id` int
+		);
+
+		create table `branch`(
+			`branch_id` int primary key,
+		    `branch_name` varchar(20),
+		    `manager_id` int,
+		    foreign key (`manager_id`) references `employee`(`emp_id`) on delete set null
+		);
+
+		alter table `employee`
+		add foreign key(`branch_id`)
+		references `branch`(`branch_id`)
+		on delete set null;
+
+
+		alter table `employee`
+		add foreign key(`sup_id`)
+		references `employee`(`emp_id`)
+		on delete set null;
+
+		create table `client`(
+			`client_id` int primary key,
+		    `client_name` varchar(20),
+		    `phone` varchar(20)
+		);
+
+		create table `works_with`(
+			`emp_id` int,
+		    `client_id` int,
+		    `total_sales` int,
+		    primary key(`emp_id`,`client_id`),
+		    foreign key(`emp_id`)references `employee`(`emp_id`) on delete cascade,
+		    foreign key(`client_id`)references `client`(`client_id`) on update cascade
+		);
