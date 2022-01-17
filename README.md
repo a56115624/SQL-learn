@@ -175,7 +175,7 @@
 		-- 7. 取得所有的branch_id且不重複
 		select  distinct `branch_id` from `employee`;
 		
-aggregate function 聚合函數
+aggregate function 聚合函數 
 ==
 
 
