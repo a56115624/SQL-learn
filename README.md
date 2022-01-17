@@ -1,5 +1,7 @@
 # SQL-learn
 
+參考資料:https://www.youtube.com/watch?v=gvRXjsrpCHw&t=5238s
+==
 
 自我學習筆記
 ==
