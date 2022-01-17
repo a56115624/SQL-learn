@@ -240,4 +240,24 @@ aggregate function 聚合函數
 		union 
 		select `total_sales`
 		from `works_with`; 
+		
+-- join 連接
+==
+		
+		insert into `branch` values (4,'偷懶',null);
+
+		-- 取的所有部門經理的名子
+		 select `emp_id`,`name`,`branch_name`
+		 from `employee` join `branch` 
+		 on `emp_id` = `manager_id`;
+		 
+		 -- left join `表格`   左邊的表格不管成不成立皆會回傳
+		select `emp_id`,`name`,`branch_name`
+		from `employee` left join `branch` 
+		on `emp_id` = `manager_id`;
+		
+		 -- right join `表格`   右邊的表格不管成不成立皆會回傳
+		 select `emp_id`,`name`,`branch_name`
+		from `employee` right join `branch` 
+		on `emp_id` = `manager_id`;
 
