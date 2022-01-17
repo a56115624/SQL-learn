@@ -201,3 +201,16 @@ aggregate function 聚合函數
 
 		-- 6. 取得薪水最低的員工
 		select min(`salary`) from `employee`;
+		
+-- wildcards 萬用字元 % 代表多個字元 _代表一個字元
+==
+
+		-- 1. 取得電話號碼為335 的客戶
+		select * from `client` where `phone` like '%335';
+
+		-- 2. 取得姓艾的客戶
+		select * from `client` where `phone` like '艾%';
+
+		-- 3.取得生日在12月的員工
+		select * from `employee` where `brith_date` like '_____12%';
+
