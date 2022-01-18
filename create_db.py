@@ -8,7 +8,7 @@ connection = mysql.connector.connect(host='localhost',
 cursor = connection.cursor()
 
 # 創建資料庫
-cursor.execute("CREATE DATABASE `database`;")
+# cursor.execute("CREATE DATABASE `qq`;")
 
 
 # 取得所有資料庫名稱
@@ -19,11 +19,11 @@ cursor.execute("CREATE DATABASE `database`;")
 
 
 # 選擇資料庫
-# cursor.execute("USE `sql_tutorial`;")
+cursor.execute("USE `sql_tutorial`;")
 
 
 # 創建表格
-# cursor.execute('CREATE TABLE `qq`(qq INT);')
+cursor.execute('CREATE TABLE `qq`(qq INT);')
 
 cursor.close()
 connection.close()
